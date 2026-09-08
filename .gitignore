@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+runs/
+downloads/
+my-first-lab/
+.uv-cache/
+*:Zone.Identifier

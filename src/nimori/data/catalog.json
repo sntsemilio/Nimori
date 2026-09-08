@@ -1,0 +1,280 @@
+{
+  "schema_version": 1,
+  "status": "planning_catalog",
+  "models": [
+    {
+      "id": "tinystories-1m",
+      "name": "TinyStories-1M",
+      "source_id": "roneneldan/TinyStories-1M",
+      "source_url": "https://huggingface.co/roneneldan/TinyStories-1M",
+      "paper_id": "tinystories",
+      "status": "candidate",
+      "planned_capabilities": [
+        "generate",
+        "structural_analysis"
+      ],
+      "validated_capabilities": [],
+      "target_release": "0.4.0",
+      "revision": null,
+      "tokenizer_revision": null,
+      "license_status": "verify_before_download",
+      "measured_profile": null
+    },
+    {
+      "id": "pythia-14m",
+      "name": "Pythia-14M",
+      "source_id": "EleutherAI/pythia-14m",
+      "source_url": "https://huggingface.co/EleutherAI/pythia-14m",
+      "paper_id": "pythia",
+      "status": "candidate",
+      "planned_capabilities": [
+        "generate",
+        "activation_hooks",
+        "checkpoint_replay",
+        "structural_analysis"
+      ],
+      "validated_capabilities": [],
+      "target_release": "0.4.0",
+      "revision": null,
+      "tokenizer_revision": null,
+      "license_status": "verify_before_download",
+      "measured_profile": null
+    },
+    {
+      "id": "pythia-70m",
+      "name": "Pythia-70M",
+      "source_id": "EleutherAI/pythia-70m",
+      "source_url": "https://huggingface.co/EleutherAI/pythia-70m",
+      "paper_id": "pythia",
+      "status": "candidate",
+      "planned_capabilities": [
+        "generate",
+        "activation_hooks",
+        "checkpoint_replay",
+        "structural_analysis"
+      ],
+      "validated_capabilities": [],
+      "target_release": "0.4.0",
+      "revision": null,
+      "tokenizer_revision": null,
+      "license_status": "verify_before_download",
+      "measured_profile": null
+    },
+    {
+      "id": "smollm2-135m",
+      "name": "SmolLM2-135M",
+      "source_id": "HuggingFaceTB/SmolLM2-135M",
+      "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M",
+      "paper_id": "smollm2",
+      "status": "candidate",
+      "planned_capabilities": [
+        "generate",
+        "prefill_decode",
+        "structural_analysis"
+      ],
+      "validated_capabilities": [],
+      "target_release": "0.2.0",
+      "revision": null,
+      "tokenizer_revision": null,
+      "license_status": "verify_before_download",
+      "measured_profile": null
+    },
+    {
+      "id": "smollm2-135m-instruct",
+      "name": "SmolLM2-135M-Instruct",
+      "source_id": "HuggingFaceTB/SmolLM2-135M-Instruct",
+      "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct",
+      "paper_id": "smollm2",
+      "status": "candidate",
+      "planned_capabilities": [
+        "generate",
+        "prefill_decode"
+      ],
+      "validated_capabilities": [],
+      "target_release": "0.4.0",
+      "revision": null,
+      "tokenizer_revision": null,
+      "license_status": "verify_before_download",
+      "measured_profile": null
+    },
+    {
+      "id": "qwen3-0.6b",
+      "name": "Qwen3-0.6B",
+      "source_id": "Qwen/Qwen3-0.6B",
+      "source_url": "https://huggingface.co/Qwen/Qwen3-0.6B",
+      "paper_id": "qwen3",
+      "status": "candidate",
+      "planned_capabilities": [
+        "generate",
+        "tool_scenarios"
+      ],
+      "validated_capabilities": [],
+      "target_release": "0.5.0",
+      "revision": null,
+      "tokenizer_revision": null,
+      "license_status": "verify_before_download",
+      "measured_profile": null
+    },
+    {
+      "id": "mamba-130m",
+      "name": "Mamba-130M",
+      "source_id": "state-spaces/mamba-130m-hf",
+      "source_url": "https://huggingface.co/state-spaces/mamba-130m-hf",
+      "paper_id": "mamba",
+      "status": "candidate",
+      "planned_capabilities": [
+        "generate",
+        "structural_analysis",
+        "recurrent_state"
+      ],
+      "validated_capabilities": [],
+      "target_release": "0.6.0",
+      "revision": null,
+      "tokenizer_revision": null,
+      "license_status": "verify_before_download",
+      "measured_profile": null
+    }
+  ],
+  "papers": [
+    {
+      "id": "tinystories",
+      "title": "TinyStories: How Small Can Language Models Be and Still Speak Coherent English?",
+      "url": "https://arxiv.org/abs/2305.07759",
+      "scope": "Historias sencillas en inglés y modelos pequeños. Revisar el checkpoint específico antes de atribuirle cifras del paper.",
+      "pdf_status": "not_downloaded"
+    },
+    {
+      "id": "pythia",
+      "title": "Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling",
+      "url": "https://arxiv.org/abs/2304.01373",
+      "repository": "https://github.com/EleutherAI/pythia",
+      "scope": "Suite y checkpoints de entrenamiento. Pythia-14M se incorporó después de la suite original.",
+      "pdf_status": "not_downloaded"
+    },
+    {
+      "id": "smollm2",
+      "title": "SmolLM2: When Smol Goes Big — Data-Centric Training of a Small Language Model",
+      "url": "https://arxiv.org/abs/2502.02737",
+      "scope": "El paper se centra en 1.7B. Las prácticas proponen 135M; no transferir automáticamente sus resultados.",
+      "pdf_status": "not_downloaded"
+    },
+    {
+      "id": "qwen3",
+      "title": "Qwen3 Technical Report",
+      "url": "https://arxiv.org/abs/2505.09388",
+      "scope": "Reporte de familia. La capacidad de usar herramientas debe comprobarse para Qwen3-0.6B y cada tarea.",
+      "pdf_status": "not_downloaded"
+    },
+    {
+      "id": "mamba",
+      "title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+      "url": "https://arxiv.org/abs/2312.00752",
+      "repository": "https://github.com/state-spaces/mamba",
+      "scope": "Método y arquitectura de estado selectivo; el adaptador requiere estado recurrente propio.",
+      "pdf_status": "not_downloaded"
+    }
+  ],
+  "labs": [
+    {
+      "id": "serving/prefill-decode",
+      "version": "0.1.0",
+      "title": "Observar prefill y decode",
+      "status": "planned",
+      "default_model": "smollm2-135m",
+      "candidate_models": [
+        "smollm2-135m"
+      ],
+      "target_release": "0.2.0",
+      "planned_modes": [
+        "measured",
+        "replayed"
+      ],
+      "question": "¿Qué parte del tiempo hasta la primera salida corresponde a procesar el prompt?",
+      "transfer_challenge": "Repite con otra longitud de prompt y explica qué mediciones permiten separar prefill de TTFT."
+    },
+    {
+      "id": "serving/chunked-prefill",
+      "version": "0.1.0",
+      "title": "Un prompt largo interrumpe el streaming",
+      "status": "planned",
+      "default_model": "smollm2-135m",
+      "candidate_models": [
+        "smollm2-135m"
+      ],
+      "target_release": "0.3.0",
+      "planned_modes": [
+        "measured",
+        "replayed"
+      ],
+      "question": "¿Cómo cambia la espera de cada solicitud al fragmentar el prefill?",
+      "transfer_challenge": "Usa un calendario de llegadas nuevo y explica el efecto sobre solicitudes largas y cortas."
+    },
+    {
+      "id": "internals/attention-ablation",
+      "version": "0.1.0",
+      "title": "Intervenir una cabeza de atención",
+      "status": "planned",
+      "default_model": "pythia-14m",
+      "candidate_models": [
+        "pythia-14m",
+        "pythia-70m"
+      ],
+      "target_release": "0.4.0",
+      "planned_modes": [
+        "measured"
+      ],
+      "question": "¿Qué cambia al desactivar una cabeza con los pesos actuales?",
+      "transfer_challenge": "Elige otro prompt y explica qué conclusión puede atribuirse a la intervención."
+    },
+    {
+      "id": "architecture/block-analysis",
+      "version": "0.1.0",
+      "title": "Inspeccionar un bloque alternativo",
+      "status": "planned",
+      "default_model": "pythia-14m",
+      "candidate_models": [
+        "pythia-14m"
+      ],
+      "target_release": "0.4.0",
+      "planned_modes": [
+        "estimated"
+      ],
+      "question": "¿El bloque conserva interfaces, dimensiones y estado compatibles?",
+      "transfer_challenge": "Cambia una dimensión y localiza la incompatibilidad; no atribuyas calidad aprendida a un bloque sin entrenar."
+    },
+    {
+      "id": "fundamentals/sampling",
+      "version": "0.1.0",
+      "title": "Explorar la distribución de salida",
+      "status": "planned",
+      "default_model": "tinystories-1m",
+      "candidate_models": [
+        "tinystories-1m",
+        "smollm2-135m-instruct"
+      ],
+      "target_release": "0.4.0",
+      "planned_modes": [
+        "measured"
+      ],
+      "question": "¿Cómo cambia la distribución al ajustar la temperatura?",
+      "transfer_challenge": "Usa una distribución distinta y explica los efectos sobre probabilidad y diversidad."
+    },
+    {
+      "id": "harness/tool-retry",
+      "version": "0.1.0",
+      "title": "Reparar un bucle de herramientas",
+      "status": "planned",
+      "default_model": null,
+      "candidate_models": [
+        "qwen3-0.6b"
+      ],
+      "target_release": "0.5.0",
+      "planned_modes": [
+        "scripted",
+        "measured"
+      ],
+      "question": "¿Cómo debe terminar el harness cuando una herramienta falla repetidamente?",
+      "transfer_challenge": "Prueba un fallo diferente y explica si el arreglo depende de la respuesta programada o del control del harness."
+    }
+  ]
+}

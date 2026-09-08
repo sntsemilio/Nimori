@@ -1,0 +1,51 @@
+name: Reporte de fallo
+description: Informa un comportamiento reproducible de Nimori.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Nimori está en desarrollo activo. Gracias por incluir un caso mínimo y el entorno donde ocurrió.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Qué ocurrió
+      description: Describe el comportamiento observado y por qué representa un problema.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Cómo reproducirlo
+      description: Incluye comandos, archivos mínimos y pasos en orden.
+      placeholder: |
+        1. Ejecuta `uv sync --locked`
+        2. Ejecuta `...`
+        3. Observa `...`
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Resultado esperado
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Entorno
+      description: Sistema, versión de Python, terminal y salida relevante de `nimori doctor --json`.
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs o evidencia adicional
+      description: Retira credenciales, rutas privadas y datos sensibles antes de publicar.
+      render: shell

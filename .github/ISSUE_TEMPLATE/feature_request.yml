@@ -1,0 +1,39 @@
+name: Propuesta de mejora
+description: Propón una capacidad o práctica para Nimori.
+title: "[Propuesta]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema de aprendizaje o investigación
+      description: Explica qué pregunta debería ayudar a contestar Nimori.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Comportamiento propuesto
+      description: Describe la interacción, entradas y resultados esperados.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: evidence
+    attributes:
+      label: Tipo de evidencia principal
+      options:
+        - measured
+        - estimated
+        - replayed
+        - scripted
+        - Por definir
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Alcance y límites
+      description: Indica dependencias, hardware y aspectos que quedarían fuera.
